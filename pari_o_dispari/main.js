@@ -25,12 +25,12 @@ submit.addEventListener('click', function(event) {
     event.preventDefault();
 
     let scelta = document.getElementById('scelta');
-    console.log(scelta.value);
+    //console.log(scelta.value);
 
     // l'utente inserisce un numero da 1 a 5
     /* let numero_utente = parseInt(prompt('Inserisci un numero da 1 a 5')); */
     let numero = document.getElementById('numero_utente');
-    let numero_utente = numero.value;
+    let numero_utente = parseInt(numero.value) ;
     //console.log(`numero utente inserito è ${numero_utente}`);
 
     //Generiamo un numero random(sempre da 1 a 5) per il computer(usando una funzione).
@@ -48,8 +48,7 @@ submit.addEventListener('click', function(event) {
     }
 
     let somma_utente_e_computer = somma(numero_utente, numero_random);
-    console.log(`la somma utente e computer è ${somma_utente_e_computer
-}`);
+    //console.log(`la somma utente e computer è ${somma_utente_e_computer}`);
 
 
     //Stabiliamo se la somma dei due numeri è pari o dispari(usando una funzione)
