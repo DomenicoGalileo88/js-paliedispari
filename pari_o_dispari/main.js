@@ -16,7 +16,20 @@ function pari_o_dispari(numero_da_verificare) {
     } else {
         return false
     }
-}
+};
+
+//Generiamo un numero random(sempre da 1 a 5) per il computer(usando una funzione).
+
+function genera_numero_random_da_1_a_5() {
+    return Math.floor(Math.random() * 6);
+};
+
+//Sommiamo i due numeri
+
+function somma(primo_numero, secondo_numero) {
+    return primo_numero + secondo_numero;
+};
+
 
 //L'utente sceglie pari o dispari
 let submit = document.getElementById('submit');
@@ -33,20 +46,11 @@ submit.addEventListener('click', function(event) {
     let numero_utente = parseInt(numero.value) ;
     //console.log(`numero utente inserito è ${numero_utente}`);
 
-    //Generiamo un numero random(sempre da 1 a 5) per il computer(usando una funzione).
-
-    function genera_numero_random_da_1_a_5() {
-        return Math.floor(Math.random() * 6);
-    }
+    
     let numero_random = genera_numero_random_da_1_a_5();
     //console.log(numero_random);
 
-    //Sommiamo i due numeri
-
-    function somma(primo_numero, secondo_numero) {
-        return primo_numero + secondo_numero;
-    }
-
+   
     let somma_utente_e_computer = somma(numero_utente, numero_random);
     //console.log(`la somma utente e computer è ${somma_utente_e_computer}`);
 
@@ -54,7 +58,7 @@ submit.addEventListener('click', function(event) {
     //Stabiliamo se la somma dei due numeri è pari o dispari(usando una funzione)
 
     let risultato_pari_o_dispari = pari_o_dispari(somma_utente_e_computer);
-    console.log(risultato_pari_o_dispari);
+    //console.log(risultato_pari_o_dispari);
 
     //Dichiariamo chi ha vinto.
 
@@ -75,15 +79,4 @@ submit.addEventListener('click', function(event) {
         console.log(`La somma dei due numeri è: ${somma_utente_e_computer}`);
     }
 
-})
-
-/* alert('Scegli pari o dispari');
-
-let scelta = parseInt(prompt('Scrivi 1 per pari e 2 per dispari'));
-
-if (scelta == 1) {
-    scelta == 'pari';
-}else if (scelta == 2){
-    scelta == 'dispari';
-}; */
-
+});
