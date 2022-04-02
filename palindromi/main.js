@@ -12,6 +12,12 @@ let user_word = prompt('Inserisci una parola');
 //console.log(user_word);
 
 //Creare una funzione per capire se la parola inserita è palindroma
+
+/**
+ * Check if the word is palindrome
+ * @param {string} user_word - word you want to verify
+ * @returns {boolean} true or false
+ */
 function parolapalindroma(user_word) {
     
     //trasformare la parola in un array scomposto in singole lettere

@@ -9,6 +9,11 @@ Dichiariamo chi ha vinto.
 */
 
 // funzione che stabilisce se un numero è pari o dispari
+/**
+ * Function that determines whether a number is odd or even
+ * @param {number} numero_da_verificare 
+ * @returns {boolean} true or false
+ */
 function pari_o_dispari(numero_da_verificare) {
     if (numero_da_verificare % 2 == 0) {
         return true;
@@ -18,11 +23,21 @@ function pari_o_dispari(numero_da_verificare) {
 };
 
 //Generiamo un numero random(sempre da 1 a 5) per il computer(usando una funzione).
+/**
+ * Function that generates a random number from 1 to 5
+ * @returns {number} random number
+ */
 function genera_numero_random_da_1_a_5() {
     return Math.floor(Math.random() * 6);
 };
 
 //Funzione che somma due numeri
+/**
+ * Function that adds two numbers
+ * @param {number} primo_numero first number
+ * @param {number} secondo_numero second number
+ * @returns {number} sum 
+ */
 function somma(primo_numero, secondo_numero) {
     return primo_numero + secondo_numero;
 };
